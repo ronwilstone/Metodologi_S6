@@ -1,0 +1,85 @@
+--- 
+title: "Judul Proposal Penelitian"
+author: "Nama Anda"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: 
+description: ""
+---
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(.packages(), 'bookdown', 'knitr', 'rmarkdown'), 'packages.bib')
+```
+
+# Abstrak
+<div style="text-align: justify"> 
+Secara garis besar optimalisasi portofolio adalah teknik pemilihan proporsi asset sehingga membuat portofolio lebih baik dengan memaksimalkan ekspektasi return investasi sekaligus memenimalkan resiko. Dalam penelitian ini, akan diterapkan pendekatan Markowitz menggunakan perangkat lunak komputasi statistik R untuk menganalisis kinerja model optimasi portofolio yang meliputi; model Mean-Variance (MV), model VaR, serta melibatkan model yang dikemukan oleh Konno dan Yamazaki's Mean-Absolute Deviasi (MAD). Untuk menilai kinerja pergerakan saham akan diperlihatkan dengan analisis risiko seperti volatilitas, Sharpe Ratio (SR), Risk Parity (RP), Expected Shortfall (ES) atau CVaR. 
+
+Model Markowitz sejatinya memperhitungkan hubungan dari beberapa pengembalian aset keuangan (saham) yang diinvestasikan dalam portofolio. Sehingga akan dilakukan observasi lima tahun data hitorikal sepuluh saham terbaik di Indonesia” yang mengacu pada US News 2018. Dalam analisis empiris, akan dibentuk portofolio secara acak, kemudian memilih proporsi portofolio yang memiliki variansi minimum pada eskpektasi return (expected return) dan volatilitasnya. Setelah memahami kinerja optimalisasi portofolio, diharapkan investor dapat mengembangkan pandangan yang lebih baik untuk mengalokasikan proporsi investasi mereka. 
+
+
+**Kata kunci:** Modern portfolio theory, Portfolio Optimization, Efficient Frontier, R Language 
+</div>
+
+
+## Manfaat Abstrak :
+<div style="text-align: justify"> 
+1. To the point. Pembaca langsung disuguhkan pada ide pokok yang akan dibahas tanpa perlu membaca isi/pembahasannya. Pembaca dapat menentukan apakah ia akan melanjutkan membaca atau tidak. Ini akan menghemat waktu pembaca
+2. Terdapat Keyword (Kata Kunci). Ini sangat penting untuk menekankan kepada pembaca kata yang penting dari karya ilmiah ini. Keyword sifatnya lebih mudah diingat, simpel namun menggambarkan isi dari karya ilmiah, makalah maupun skripsi. Selain itu kata kunci mempermudah penyimpanan secara elektronik.
+3. Membantu penulis untuk menentukan pokok/rumusan masalah, teori dan metode penelitian yang digunakan, sumber data, variabel, hasil penelitian, dan simpulan dari penelitian tersebut. Membuat abstrak di awal dapat mencegah penulis untuk out of topic atau keluar dari poko bahasan
+
+Karena tujuannya untuk memudahkan pembaca, maka Penulis harus mampu memberikan gambaran yang jelas dan mudah dimengerti dengan singkat, padat dan jelas
+
+Lalu bagaimana penulisan abstrak yang baik? Berikut penjelasannya
+
+**Judul Tulisan Abstrak**
+Judul adalah kekuatan utama. Buatlah judul dengan menarik, namun tetap sesuai dengan pokok pembahasan. Judul yang menarik akan membuat pembaca penasaran dan lanjut untuk membaca.
+
+**Latar belakang Tulisan Abstrak**
+Ini dari latar belakang adalah MENGAPA kamu mengangkat topik ini. Jelaskan dengan singkat asal mula topik ini dipilih, seperti misalnya berawal dari masalah sosial, lingkungan atau kehidupan sehari-hari. Kamu tidak mungkin mengangkat suatu topik jika tidak ada permasalahan tersebut sebelumnya. Karena inti dari karya tulis adalah menyelesaikan suatu masalah yang ada melalui penelitian ini.
+
+**Metode Penelitian, Sumber data, Variabel dan pendukung lain**
+Cantumkan metode penelitian yang kamu gunakan, sumber data penelitian, variabel serta data pendukung lain sebagai dasar pembuatan karya ilmiah tersebut.
+
+**Gambaran Tulisan Abstrak**
+Jelaskan gambaran dari karya ilmiah kamu dengan singkat, padat namun jelas dan mudah dipahami. Gunakan kata tanya KAPAN, BAGAIMANA, DIMANA dll untuk menjelaskan gambaran tersebut. Kamu bisa menyesuaikannya sesuai dengan pembahasan yang kamu buat.
+
+**Simpulan Tulisan Abstrak**
+Terakhir, Jelaskan simpulan dari hasil penelitian serta solusi untuk mengatasi permasalahan. Intinya, simpulan harus menjawab pertanyaan dan rumusan masalah yang ada secara singkat.
+
+**Kata Kunci (Keyword)**
+Tulis kata kunci yang penting di bawah simpulan. Kamu harus menyertakan minimal 3 kata kunci
+</div>
+
+# Kata Pengantar
+<div style="text-align: justify"> 
+Puji syukur senantiasa kita panjatkan kehadirat Tuhan Yang Maha Esa atas semua limpahan rahmat-Nya sehingga tim dan saya dapat menyelesaikan penyusunan buku yang berjudul **"Metode Penelitian"**, meskipun dengan sangat sederhana. Harapan kami, kirannya buku yang telah tersusun ini dapat bermanfaat menjadi salah satu rujukan maupun pedoman bagi para pembaca, menambah wawasan serta dapat menjadi inspirasi dalam memahami ilmu statistik.  
+
+Sebagai penulis, saya **Bakti Siregar M.Sc** mengakui bahwasanya masih banyak kekurangan yang terkandung di dalamnya. Oleh sebab itu, dengan penuh kerendahan hati saya berharap kepada para pembaca untuk memberikan kritik dan saran demi lebih memperbaiki buku ini.
+
+Tidak lupa, penulis juga mengucapkan terima kasih kepada semua pihak yang telah berjasa memberikan kontribusi dalam rangka menyelesaikan buku ini, yaitu kepada mahasiswa saya di Program Studi Statistika Matana University: 
+
+> 1. Endri Tri Wibowo (alamat email)
+> 2. Jihan Selianovira alamat email)
+> 3. Kevin Sugianto (alamat email)
+> 4. Ardiwan (alamat email)
+
+<br>
+**Tentang Penulis:**
+<br>
+Email      : siregarbakti@gmail.com / siregar.bakti@matanauniversity.ac.id <br>
+No.Whatsapp: 081369552544
+
+</div>
+
+
+
+
+
+
